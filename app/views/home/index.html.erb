@@ -1,0 +1,287 @@
+<div class="header">
+  <div class="container">
+    <div class="header-top">
+      <div class="logo">
+        <h1><a href="/">Song Time</a></h1>
+      </div>
+      <div class="top-nav">
+        <span class="menu"><img src="assets/menu.png" alt=""> </span>
+        <ul>
+          <li ><a href="/" class="hvr-sweep-to-bottom color"><i class="glyphicon glyphicon-home"></i>Home  </a> </li>
+          <li ><a href="/song/new" class="hvr-sweep-to-bottom color1"><i class="glyphicon glyphicon-picture"></i>Albums  </a> </li>
+          <!--          <li><a href="blog.html"  class="hvr-sweep-to-bottom color2"><i class="glyphicon glyphicon-tags"></i>Blog</a></li>-->
+          <!--          <li><a href="typo.html" class="hvr-sweep-to-bottom color3"><i class="glyphicon glyphicon-calendar"></i>Events </a></li>-->
+          <!--          <li><a href="mail.html" class="hvr-sweep-to-bottom color4"><i class="glyphicon glyphicon-envelope"></i>Mail </a></li>-->
+          <div class="clearfix"> </div>
+        </ul>
+
+        <!--script-->
+        <script>
+            $("span.menu").click(function(){
+                $(".top-nav ul").slideToggle(500, function(){
+                });
+            });
+        </script>
+      </div>
+
+      <div class="clearfix"> </div>
+      <input class="btn-primary" type="button" value="Upload Now" style="float: left; margin-top: 100px; border-radius: 10px; height: 100px;font-size: large; background-color: #5e2c8f;width: 250px">
+    </div>
+    <div class="banner-main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <div class="banner-matter">
+                <h3>Consectetur adipisicing elit</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              </div>
+            </li>
+            <li>
+              <div class="banner-matter">
+                <h3>Consectetur adipisicing elit</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>				  	</div>
+            </li>
+            <li>
+              <div class="banner-matter">
+                <h3>Consectetur adipisicing elit</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>				  	</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <!--FlexSlider-->
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.flexslider').flexslider();
+        });
+        // $(window).load(function(){
+        //     $('.flexslider').flexslider({
+        //         animation: "slide",
+        //         start: function(slider){
+        //             $('body').removeClass('loading');
+        //         }
+        //     });
+        // });
+    </script>
+
+  </div>
+</div>
+
+
+<div class="content">
+  <div class="container">
+    <!--content-top-->
+    <div class="content-top">
+      <div class="col-md-7 content-top1">
+        <h3>Welcome</h3>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text
+          , and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose,
+
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to</p>
+      </div>
+      <div class="col-md-5 top-col">
+        <div class="col1">
+          <div class="col-md-6 col2">
+            <img src="assets/ic.png" alt="" >
+          </div>
+          <div class="col-md-6 col3">
+            <img src="assets/ic1.png" alt="" >
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="col1">
+          <div class="col-md-6 col4">
+            <img src="assets/ic2.png" alt="" >
+          </div>
+          <div class="col-md-6 col5">
+            <img src="assets/ic3.png" alt="" >
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+
+    <!---------------------------------------------------------- table-->
+    <div class="home-page-icon-boxes ">
+      <div class="container"  style="padding-bottom: 20px">
+        <div class="row">
+
+
+          <div class="col-12 col-md-12 col-lg-12 mt-12 mt-lg-12">
+            <div class="icon-box">
+
+              <table id="songTable" class="table table-striped">
+                <thead>
+                <tr>
+                  <th scope="col" class="th-sm">#
+                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                  </th>
+                  <th scope="col" class="th-sm">Name
+                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                  </th>
+                  <th scope="col" class="th-sm">Album
+                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                  </th>
+                  <th scope="col" class="th-sm">Singer
+                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                  </th>
+                  <th scope="col" class="th-sm">Length
+                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                  </th>
+                  <th scope="col" class="th-sm">Type
+                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                  </th>
+                  <th scope="col">Download</th>
+                </tr>
+                </thead>
+                <tbody>
+                <% if @songs.present? %>
+                  <% @songs.each do |song| %>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td><%= song.song_name %></td>
+                      <td><%= song.album %></td>
+                      <td><%= song.singer %></td>
+                      <td><%= song.duration %></td>
+                      <td><%= song.song_type %></td>
+                      <td><a href="#">download</a></td>
+                    </tr>
+
+                  <% end %>
+                  </tbody>
+                  </table>
+                <% else %>
+
+                  </tbody>
+                  </table>
+                  No Data
+                  <input type="button" class="btn-danger" value="Check btn" id="c1">
+                <% end %>
+
+
+                </div>
+          </div>
+        </div><!-- .container -->
+      </div><!-- .home-page-icon-boxes -->
+    </div>
+    <!--//content-top-->
+    <!-----content-To ------------------------------------show album-------------------------------mid-->
+<!--    <div class="content-mid">-->
+<!--      <div class="col-md-4 mid">-->
+<!--        <a href="single.html"><img src="assets/1.jpg" alt="" class="img-responsive">-->
+<!--          <div class="mid1">-->
+<!--            <h4>My Album</h4>-->
+<!--            <i class="glyphicon glyphicon-circle-arrow-right"></i>-->
+<!--            <div class="clearfix"> </div>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--      <div class="col-md-4 mid">-->
+<!--        <a href="single.html"><img src="assets/2.jpg" alt="" class="img-responsive">-->
+<!--          <div class="mid1">-->
+<!--            <h4>My Album</h4>-->
+<!--            <i class="glyphicon glyphicon-circle-arrow-right"></i>-->
+<!--            <div class="clearfix"> </div>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--      <div class="col-md-4 mid">-->
+<!--        <a href="single.html"><img src="assets/4.jpg" alt="" class="img-responsive">-->
+<!--          <div class="mid1">-->
+<!--            <h4>My Album</h4>-->
+<!--            <i class="glyphicon glyphicon-circle-arrow-right"></i>-->
+<!--            <div class="clearfix"> </div>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--      <div class="clearfix"> </div>-->
+<!--    </div>-->
+    <!--content-mid-->
+  </div>
+<!--  <div class="content--------------------------------- My Team------------------middle">-->
+<!--    <div class="container">-->
+<!--      <div class="content-mid-top">-->
+<!--        <h3> Team</h3>-->
+<!--      </div>-->
+<!--      <div class="news">-->
+<!--        <div class="col-md-6 new-more">-->
+<!--          <div class=" new-more1">-->
+<!--            <div class="col-md-2 six">-->
+<!--              <img class="img-responsive" src="assets/te.jpg" alt="">-->
+<!--            </div>-->
+<!--            <div class="col-md-10 six1">-->
+<!--              <h5>It is a long established fact that</h5>-->
+<!--              <p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>-->
+<!--              <a href="single.html"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>-->
+<!--            </div>-->
+<!--            <div class="clearfix"> </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-6 new-more">-->
+<!--          <div class=" new-more1">-->
+<!--            <div class="col-md-2 six">-->
+<!--              <img class="img-responsive" src="assets/te1.jpg" alt="">-->
+<!--            </div>-->
+<!--            <div class="col-md-10 six1">-->
+<!--              <h5>It is a long established fact that</h5>-->
+<!--              <p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>-->
+<!--              <a href="single.html"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>						</div>-->
+<!--            <div class="clearfix"> </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="clearfix"> </div>-->
+<!--      </div>-->
+<!--      <div class="news">-->
+<!--        <div class="col-md-6 new-more">-->
+<!--          <div class=" new-more1">-->
+<!--            <div class="col-md-2 six">-->
+<!--              <img class="img-responsive" src="assets/te3.jpg" alt="">-->
+<!--            </div>-->
+<!--            <div class="col-md-10 six1">-->
+<!--              <h5>It is a long established fact that</h5>-->
+<!--              <p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>-->
+<!--              <a href="single.html"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>						</div>-->
+<!--            <div class="clearfix"> </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-6 new-more">-->
+<!--          <div class=" new-more1">-->
+<!--            <div class="col-md-2 six">-->
+<!--              <img class="img-responsive" src="assets/te2.jpg" alt="">-->
+<!--            </div>-->
+<!--            <div class="col-md-10 six1">-->
+<!--              <h5>It is a long established fact that</h5>-->
+<!--              <p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>-->
+<!--              <a href="single.html"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>-->
+<!--            </div>-->
+<!--            <div class="clearfix"> </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="clearfix"> </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+  <!---->
+
+  <!---->
+</div>
+<!--//content-->
+<script>
+    $('#songTable').DataTable({
+        // ajax: ...,
+        // autoWidth: false,
+        // pagingType: 'full_numbers',
+        // processing: true,
+        // serverSide: true,
+
+        // Optional, if you want full pagination controls.
+        // Check dataTables documentation to learn more about available options.
+        // http://datatables.net/reference/option/pagingType
+    });
+</script>

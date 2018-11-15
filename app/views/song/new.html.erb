@@ -1,0 +1,66 @@
+<div class="header1">
+  <div class="container">
+    <div class="header-top">
+      <div class="logo">
+        <h1><a href="/">Song Time</a></h1>
+      </div>
+      <div class="top-nav">
+        <span class="menu"><img src="assets/menu.png" alt=""> </span>
+        <ul>
+          <li ><a href="/" class="hvr-sweep-to-bottom color"><i class="glyphicon glyphicon-home"></i>Home  </a> </li>
+          <li ><a href="/song/new" class="hvr-sweep-to-bottom color1"><i class="glyphicon glyphicon-picture"></i>Albums  </a> </li>
+          <!--          <li><a href="blog.html"  class="hvr-sweep-to-bottom color2"><i class="glyphicon glyphicon-tags"></i>Blog</a></li>-->
+          <!--          <li><a href="typo.html" class="hvr-sweep-to-bottom color3"><i class="glyphicon glyphicon-calendar"></i>Events </a></li>-->
+          <!--          <li><a href="mail.html" class="hvr-sweep-to-bottom color4"><i class="glyphicon glyphicon-envelope"></i>Mail </a></li>-->
+
+        </ul>
+        <!--script-->
+
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+<div class="content" style="color: white">
+  <div class="container">
+    <!--content-top-->
+    <div class="content-top">
+      <%= form_for @song,:url=>'/song' do |f| %>
+        <%= f.label :song_name,  style: ' font-size: 18px'  %>:
+        <%= f.text_field :song_name , :class=>"form-control"  %><br />
+
+        <%= f.label :album ,style: ' font-size: 18px' %>:
+        <%= f.text_field :album, :class=>"form-control" %><br />
+
+        <%= f.label :singer ,style: ' font-size: 18px' %>:
+        <%= f.text_field :singer, :class=>"form-control" %><br />
+
+        <%= f.label :singer ,style: ' font-size: 18px' %>:
+        <%= f.text_field :singer, :class=>"form-control" %><br />
+
+        <%= f.label :length ,style: ' font-size: 18px' %>:
+        <%= f.text_field :duration, :class=>"form-control" %><br />
+
+        <%= f.label :song_type ,style: ' font-size: 18px' %>:
+        <%= f.text_field :song_type, :class=>"form-control" %><br />
+
+        <%= f.label :song_file ,style: ' font-size: 18px' %>:
+        <%= f.file_field :song_file, :html=>'style: float-right;' %><br />
+
+        <%= f.hidden_field :approved, :value=>false %><br />
+
+        <%= f.submit 'Upload',style: ' color: black' %>
+      <% end %>
+
+
+
+    </div>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
