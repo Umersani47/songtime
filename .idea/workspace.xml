@@ -2,168 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2cceac8-d555-45e9-b2b5-07c1db55034b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/songtime.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/admin/admin_users.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/admin/dashboard.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/admin/songs.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/config/manifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/fonts/Audiowide-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/fonts/Imprima-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/a1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/a2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/a3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/a4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/a5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/a6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/a7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/a8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/a9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/b1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/b2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/back.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/back1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/black_background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/co.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/ic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/ic1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/ic2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/ic3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/te.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/te1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/te2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/te3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/active_admin.js.coffee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/cable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/channels/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/chocolat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/flexslider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/home.coffee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/hoverdir.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/modernizrs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/song.coffee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/active_admin.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/chocolat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/flexslider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/song.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/channels/application_cable/channel.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/channels/application_cable/connection.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/song_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/home_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/song_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/jobs/application_job.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mailers/application_mailer.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/admin_user.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/application_record.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/concerns/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/song.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/_footer.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/_header.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/song/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/song/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/bundle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/rails" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/rake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/setup" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/spring" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/update" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.ru" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/boot.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/cable.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/environment.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/environments/test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/active_admin.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/application_controller_renderer.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/cookies_serializer.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/devise.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/inflections.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/mime_types.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/new_framework_defaults.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/session_store.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/locales/devise.en.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/locales/en.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/puma.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/secrets.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/spring.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20181114122528_create_songs.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20181114123553_devise_create_admin_users.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20181114123555_create_active_admin_comments.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/assets/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/tasks/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/422.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/apple-touch-icon-precomposed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/home_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/song_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/admin_users.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/files/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/songs.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/helpers/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/integration/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/mailers/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/admin_user_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/song_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/assets/javascripts/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/.keep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -195,6 +34,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
           <entry key="js" value="3" />
+          <entry key="md" value="1" />
           <entry key="rb" value="6" />
           <entry key="yml" value="1" />
         </counts>
@@ -204,6 +44,7 @@
           <entry key="CSS" value="9" />
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="3" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RHTML" value="8" />
           <entry key="Ruby" value="8" />
@@ -260,11 +101,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="475">
+                <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -339,6 +192,7 @@
         <option value="$PROJECT_DIR$/app/controllers/song_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/song/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -439,6 +293,11 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="song" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="songtime" type="b2602c69:ProjectViewProjectNode" />
+              <item name="songtime" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="songtime" type="b2602c69:ProjectViewProjectNode" />
@@ -592,12 +451,12 @@
       <updated>1542179666082</updated>
       <workItem from="1542179667296" duration="16256000" />
       <workItem from="1542261246203" duration="618000" />
-      <workItem from="1542288901426" duration="499000" />
+      <workItem from="1542288901426" duration="1227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17373000" />
+    <option name="totallyTimeSpent" value="18101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -768,6 +627,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="475">
+            <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
