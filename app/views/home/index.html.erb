@@ -150,7 +150,7 @@
                       <td><%= song.singer %></td>
                       <td><%= song.duration %></td>
                       <td><%= song.song_type %></td>
-                      <td><a href="#">download</a></td>
+                      <td><a href=<%= song.song_file.url %> >download</a></td>
                     </tr>
 
                   <% end %>
