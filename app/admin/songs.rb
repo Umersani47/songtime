@@ -8,7 +8,7 @@ ActiveAdmin.register Song do
     column :album
     column :singer
     column :duration
-    column :song_file
+    column 'Song File', sortable: :song_file do |firmware| link_to firmware.song_file, firmware.song_file.url end
     column :approved
     column :uploader
     actions
@@ -30,8 +30,8 @@ ActiveAdmin.register Song do
       f.input :singer
       f.input :duration
       f.input :song_file
-      f.input :approved
-      f.input :uploader
+      f.input :approved, value: true
+      f.input :uploader, input_html: { value: "Admin" }
     end
     f.actions
   end

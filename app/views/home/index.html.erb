@@ -143,16 +143,17 @@
                 <tbody>
                 <% if @songs.present? %>
                   <% @songs.each do |song| %>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td><%= song.song_name %></td>
-                      <td><%= song.album %></td>
-                      <td><%= song.singer %></td>
-                      <td><%= song.duration %></td>
-                      <td><%= song.song_type %></td>
-                      <td><a href=<%= song.song_file.url %> >download</a></td>
-                    </tr>
-
+                    <% if song.approved %>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td><%= song.song_name %></td>
+                        <td><%= song.album %></td>
+                        <td><%= song.singer %></td>
+                        <td><%= song.duration %></td>
+                        <td><%= song.song_type %></td>
+                        <td><a href=<%= song.song_file.url %> >download</a></td>
+                      </tr>
+                    <% end %>
                   <% end %>
                   </tbody>
                   </table>

@@ -32,6 +32,22 @@
     <!--content-top-->
     <div class="content-top">
       <%= form_for @song,:url=>'/song' do |f| %>
+
+        <% if @song.errors.any? %>
+          <div id="error_explanation" class="alert alert-danger alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close" style="color: black">&times;</a>
+<!--            <h2>-->
+<!--              <%#= pluralize(@song.errors.count, "error") %> prohibited-->
+<!--              this song from being saved:-->
+<!--            </h2>-->
+            <ul>
+              <% @song.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
         <%= f.label :song_name,  style: ' font-size: 18px'  %>:
         <%= f.text_field :song_name , :class=>"form-control"  %><br />
 
@@ -50,7 +66,7 @@
         <%= f.label :song_type ,style: ' font-size: 18px' %>:
         <%= f.text_field :song_type, :class=>"form-control" %><br />
 
-        <%= f.label :song_file ,style: ' font-size: 18px' %>:
+        <%= f.label :song_file ,style: ' font-size: 18px' %>
         <%= f.file_field :song_file, :html=>'style: float-right;' %><br />
 
         <%= f.hidden_field :approved, :value=>false %><br />
