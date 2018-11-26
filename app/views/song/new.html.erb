@@ -57,9 +57,6 @@
         <%= f.label :singer ,style: ' font-size: 18px' %>:
         <%= f.text_field :singer, :class=>"form-control" %><br />
 
-        <%= f.label :singer ,style: ' font-size: 18px' %>:
-        <%= f.text_field :singer, :class=>"form-control" %><br />
-
         <%= f.label :length ,style: ' font-size: 18px' %>:
         <%= f.text_field :duration, :class=>"form-control" %><br />
 
@@ -67,11 +64,14 @@
         <%= f.text_field :song_type, :class=>"form-control" %><br />
 
         <%= f.label :song_file ,style: ' font-size: 18px' %>
-        <%= f.file_field :song_file, :html=>'style: float-right;' %><br />
+        <%= f.file_field :song_file, :required => "true",:html=>'style: float-right;' %><br />
 
         <%= f.hidden_field :approved, :value=>false %><br />
 
-        <%= f.submit 'Upload',style: ' color: black' %>
+        <%= f.submit 'Upload',:id=>"submit", style: ' color: black', :class=>"col-lg-1 col-md-1" %>
+        <div class="uploader hidden" style="margin-bottom: 40px;">
+          <%= image_tag "pageloder1.gif" %>
+        </div>
       <% end %>
 
 
@@ -79,4 +79,9 @@
     </div>
   </div>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<script>
+  $('#submit').click(function () {
+      $('.uploader').removeClass("hidden");
+  })
+</script>

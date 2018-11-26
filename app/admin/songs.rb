@@ -1,10 +1,11 @@
 ActiveAdmin.register Song do
-  permit_params :song_name, :song_type, :album,:uploader, :singer, :duration, :song_file, :approved
+  permit_params :song_name, :song_type, :album,:uploader, :singer, :duration, :song_file, :approved,:extension
   index do
     selectable_column
     id_column
     column :song_name
     column :song_type
+    column :extension
     column :album
     column :singer
     column :duration
@@ -21,6 +22,7 @@ ActiveAdmin.register Song do
   filter :duration
   filter :song_file
   filter :approved
+  filter :extension
 
   form do |f|
     f.inputs do
@@ -29,6 +31,7 @@ ActiveAdmin.register Song do
       f.input :album
       f.input :singer
       f.input :duration
+      f.input :extension
       f.input :song_file
       f.input :approved, value: true
       f.input :uploader, input_html: { value: "Admin" }
