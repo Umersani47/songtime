@@ -20,6 +20,11 @@ class SongController < ApplicationController
       render 'new'
     end
   end
+  def search_song_by_word()
+    search = params[:data]
+    @songs = Song.where('song_name LIKE ?', "#{search}%").where(extension: "mp3")
+    @songs1 = Song.where('song_name LIKE ?', "#{search}%").where(extension: "mp4")
+  end
 
   def songs_params
     params.require(:song).permit!

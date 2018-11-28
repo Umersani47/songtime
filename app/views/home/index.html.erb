@@ -114,11 +114,12 @@
       <input id="type-btn" type="checkbox" data-toggle="toggle" data-on="Mp4" data-off="Mp3">
     </div>
     <br><br>
-    <div id="mp4-div" class="home-page-icon-boxes hidden">
+
+    <div >
       <div class="container"  style="padding-bottom: 20px">
         <div class="row">
 
-          <div class="col-12 col-md-12 col-lg-12 mt-12 mt-lg-12">
+          <div id="mp4-div"  class="col-9 col-md-9 col-lg-9 mt-9 mt-lg-9">
             <div class="icon-box">
 
               <table id="songTable1" class="table table-striped">
@@ -172,14 +173,7 @@
 
                 </div>
           </div>
-        </div><!-- .container -->
-      </div><!-- .home-page-icon-boxes -->
-    </div>
-    <div id="mp3-div" class="home-page-icon-boxes hidden">
-      <div class="container"  style="padding-bottom: 20px">
-        <div class="row">
-
-          <div class="col-12 col-md-12 col-lg-12 mt-12 mt-lg-12">
+          <div id="mp3-div" class="col-9 col-md-9 col-lg-9 mt-9 mt-lg-9">
             <div class="icon-box">
 
               <table id="songTable" class="table table-striped">
@@ -233,10 +227,43 @@
 
                 </div>
           </div>
+
+          <div id="search_div" class="col-lg-3 col-md-3 " style=" background-color: #46c4ca; border-bottom-left-radius: 10px; border-top-right-radius: 10px">
+            <h3 style="text-align: center">Search</h3>
+            <input type="text" name="search" placeholder="Search.." style="float: center"><br><br>
+            <a href="<%= search_song_by_word_song_index_path(data: 'a') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">A</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'b') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">B</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'c') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">C</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'd') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">D</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'e') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">E</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'f') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">F</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'g') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">G</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'h') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">H</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'i') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">I</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'j') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">J</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'k') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">K</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'l') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">L</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'm') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">M</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'n') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">N</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'o') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">O</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'p') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">P</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'q') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">Q</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'r') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">R</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 's') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">S</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 't') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">T</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'u') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">U</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'v') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">V</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'w') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">W</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'x') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">X</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'y') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">Y</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'z') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">Z</a>
+          </div>
         </div><!-- .container -->
       </div><!-- .home-page-icon-boxes -->
     </div>
+
     <!--//content-top-->
+    <br><br>
     <!-----content-To ------------------------------------show album-------------------------------mid-->
 <!--    <div class="content-mid">-->
 <!--      <div class="col-md-4 mid">-->
