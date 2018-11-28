@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181114123555) do
+ActiveRecord::Schema.define(version: 20181126162609) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,9 +49,10 @@ ActiveRecord::Schema.define(version: 20181114123555) do
     t.string   "uploader"
     t.string   "song_type"
     t.string   "song_file"
-    t.boolean  "approved"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.boolean  "approved",   default: true
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.string   "extension"
   end
 
 end

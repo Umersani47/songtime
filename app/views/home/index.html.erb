@@ -109,12 +109,72 @@
     </div>
 
     <!---------------------------------------------------------- table-->
-    <div class="home-page-icon-boxes ">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <div style="position: relative;top: 50%;left: 50%;">
+      <input id="type-btn" type="checkbox" data-toggle="toggle" data-on="Mp4" data-off="Mp3">
+    </div>
+    <br><br>
+
+    <div >
       <div class="container"  style="padding-bottom: 20px">
         <div class="row">
 
+          <div id="mp4-div"  class="col-9 col-md-9 col-lg-9 mt-9 mt-lg-9">
+            <div class="icon-box">
 
-          <div class="col-12 col-md-12 col-lg-12 mt-12 mt-lg-12">
+              <table id="songTable1" class="table table-striped">
+                <thead>
+                <tr>
+                  <th scope="col" class="th-sm">#
+                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                  </th>
+                  <th scope="col" class="th-sm">Name
+                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                  </th>
+                  <th scope="col" class="th-sm">Album
+                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                  </th>
+                  <th scope="col" class="th-sm">Singer
+                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                  </th>
+                  <th scope="col" class="th-sm">Length
+                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                  </th>
+                  <th scope="col" class="th-sm">Type
+                    <i class="fa fa-sort float-right" aria-hidden="true"></i>
+                  </th>
+                  <th scope="col">Download</th>
+                </tr>
+                </thead>
+                <tbody>
+                <% if @songs1.present? %>
+                  <% @songs1.each do |song| %>
+                    <% if song.approved %>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td><%= song.song_name %></td>
+                        <td><%= song.album %></td>
+                        <td><%= song.singer %></td>
+                        <td><%= song.duration %></td>
+                        <td><%= song.song_type %></td>
+                        <td><a href=<%= song.song_file.url %> >download</a></td>
+                      </tr>
+                    <% end %>
+                  <% end %>
+                  </tbody>
+                  </table>
+                <% else %>
+
+                  </tbody>
+                  </table>
+                  No Data
+                <% end %>
+
+
+                </div>
+          </div>
+          <div id="mp3-div" class="col-9 col-md-9 col-lg-9 mt-9 mt-lg-9">
             <div class="icon-box">
 
               <table id="songTable" class="table table-striped">
@@ -144,16 +204,17 @@
                 <tbody>
                 <% if @songs.present? %>
                   <% @songs.each do |song| %>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td><%= song.song_name %></td>
-                      <td><%= song.album %></td>
-                      <td><%= song.singer %></td>
-                      <td><%= song.duration %></td>
-                      <td><%= song.song_type %></td>
-                      <td><a href="#">download</a></td>
-                    </tr>
-
+                    <% if song.approved %>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td><%= song.song_name %></td>
+                        <td><%= song.album %></td>
+                        <td><%= song.singer %></td>
+                        <td><%= song.duration %></td>
+                        <td><%= song.song_type %></td>
+                        <td><a href=<%= song.song_file.url %> >download</a></td>
+                      </tr>
+                    <% end %>
                   <% end %>
                   </tbody>
                   </table>
@@ -162,16 +223,48 @@
                   </tbody>
                   </table>
                   No Data
-                  <input type="button" class="btn-danger" value="Check btn" id="c1">
                 <% end %>
 
 
                 </div>
           </div>
+
+          <div id="search_div" class="col-lg-3 col-md-3 " style=" background-color: #46c4ca; border-bottom-left-radius: 10px; border-top-right-radius: 10px">
+            <h3 style="text-align: center">Search</h3>
+            <input type="text" name="search" placeholder="Search.." style="float: center"><br><br>
+            <a href="<%= search_song_by_word_song_index_path(data: 'a') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">A</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'b') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">B</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'c') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">C</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'd') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">D</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'e') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">E</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'f') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">F</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'g') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">G</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'h') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">H</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'i') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">I</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'j') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">J</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'k') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">K</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'l') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">L</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'm') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">M</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'n') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">N</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'o') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">O</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'p') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">P</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'q') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">Q</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'r') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">R</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 's') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">S</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 't') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">T</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'u') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">U</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'v') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">V</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'w') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">W</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'x') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">X</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'y') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">Y</a>
+            <a href="<%= search_song_by_word_song_index_path(data: 'z') %>" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">Z</a>
+          </div>
         </div><!-- .container -->
       </div><!-- .home-page-icon-boxes -->
     </div>
+
     <!--//content-top-->
+    <br><br>
     <!-----content-To ------------------------------------show album-------------------------------mid-->
 <!--    <div class="content-mid">-->
 <!--      <div class="col-md-4 mid">-->
@@ -274,7 +367,40 @@
 </div>
 <!--//content-->
 <script>
+    $('#type-btn').change(function () {
+        if ($('#type-btn:checked').val() == "on")
+        {
+            $("#mp4-div").removeClass("hidden");
+            $("#mp3-div").addClass("hidden");
+        }
+        else
+        {
+            $("#mp3-div").removeClass("hidden");
+            $("#mp4-div").addClass("hidden");
+        }
+    })
+    if ($('#type-btn:checked').val() == "on")
+    {
+        $("#mp4-div").removeClass("hidden");
+        $("#mp3-div").addClass("hidden");
+    }
+    else
+    {
+        $("#mp3-div").removeClass("hidden");
+        $("#mp4-div").addClass("hidden");
+    }
     $('#songTable').DataTable({
+        // ajax: ...,
+        // autoWidth: false,
+        // pagingType: 'full_numbers',
+        // processing: true,
+        // serverSide: true,
+
+        // Optional, if you want full pagination controls.
+        // Check dataTables documentation to learn more about available options.
+        // http://datatables.net/reference/option/pagingType
+    });
+    $('#songTable1').DataTable({
         // ajax: ...,
         // autoWidth: false,
         // pagingType: 'full_numbers',

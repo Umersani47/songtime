@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   get 'home/index'
   root 'home#index'
   resources :home
-  resources :song
+  resources :song do
+      collection do
+        get :search_song_by_word
+      end
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
